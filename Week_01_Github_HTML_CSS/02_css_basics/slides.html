@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="../../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../../reveal/css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../../reveal/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Class 2</h2>
+					<h3>WELCOME!</h3>
+				</section>
+
+				<section>
+					<h2>Tonight's Objectives:</h2>
+					<ul>
+						<li>How does the internet work?</li>
+						<li>HTML:  Review HTML</li>
+						<li>HTML:  DOM Tree</li>
+						<li>HTML:  Attributes</li>
+						<li>HTML:  Image tags and folder paths</li>
+						<li>HTML:  Anchor tags and paths</li>
+						<li>CSS:  Introduction</li>
+					</ul>
+				</section>
+
+				<!-- How internet workss -->
+				<section data-background="#ccc">
+          <h1 style="color: #000;">How does the internet work?</h1>
+        </section>
+
+        <section>
+        	<h3>Questions?</h3>
+        	<div>
+        		<p>Explain these terms and concepts to each other.</p>
+        		<ul>
+        			<li>Client vs Server</li>
+        			<li>Web Browser</li>
+        			<li>ISP</li>
+        			<li>IP</li>
+        			<li>DNS</li>
+        			<li>When you enter www.google.com into Chrome what happens?</li>
+        		</ul>
+          </div>
+        </section>
+
+				<!--HTML Review -->
+				<section data-background="#ccc">
+          <h1 style="color: #000;">HTML:  Review</h1>
+        </section>
+
+			  <!-- html review -->
+				<section>
+					<p>What is HTML? Look up the tags shown below:</p>
+					<img src="../../img/html_example.png">
+				</section>
+
+			  <!-- html review -->
+				<section>
+					<p>HTML DOM Tree</p>
+					<img src="../../img/simpledom.png">
+				</section>
+
+			  <!--dom tree -->
+				<section>
+					<p>Draw the DOM Tree for the image below:</p>
+					<img src="../../img/html_example.png">
+				</section>
+
+			  <!-- attributes -->
+				<section>
+					<section>
+						<p>Tags</p>
+						<img src="../../img/unit_1/tags.png">
+						<pre><code class = "html">
+<div></div>
+
+<p></p>
+
+<ul></ul>
+
+<a></a>
+
+<img>
+	          </code></pre>
+          </section>
+					<section>
+						<p>Tags with Attributes</p>
+						<img src="../../img/unit_1/tags_attributes.png">
+
+						<pre><code class = "html">
+<div class='main-container'></div>
+
+<p id='slogan'></p>
+
+<ul data-custom-attribute="my-custom"></ul>
+
+<a href="www.google.com"></a>
+
+<img src="image.jpeg">
+	          </code></pre>
+          </section>
+
+				</section>
+
+			  <!-- image tag  -->
+				<section>
+					<p>Image Tag</p>
+
+						<pre><code class = "html">
+<img src="">
+	          </code></pre>
+	          <p>Source can be an URL path</p>
+						<pre><code class = "html">
+<img src="http://www.loremipsum.com/images/dog.png">
+	          </code></pre>
+	          <p>Source can be relative path</p>
+						<pre><code class = "html">
+<img src="images/dog.png">
+	          </code></pre>
+	          <p>Source can be an absolute path</p>
+						<pre><code class = "html">
+<img src="/home/users/mike/documents/images/dog.png">
+	          </code></pre>
+				</section>
+
+			  <!-- image tag  -->
+				<section>
+					<section>
+						<p>Relative and Absolute paths?</p>
+					</section>
+					<section>
+						<p>Relative (from where the HTML page is)</p>
+						<img src="../../img/unit_1/folder_structure.png">
+							<pre><code class = "html">
+<!-- index.html -->
+
+  <img src="images/logo.png">
+
+							</code></pre>
+						</section>
+						<section>
+							<p>Relative (from where the HTML page is again)</p>
+							<img src="../../img/unit_1/folder_structure_parentDirectory.png">
+							<pre><code class = "html">
+<!-- index.html -->
+
+
+  <img src="../images/logo.png">
+
+							</code></pre>
+						</section>
+					<section>
+						<p>Absolute (from the root directory)</p>
+						<img src="../../img/unit_1/folder_structure.png">
+						<img src="../../img/unit_1/folder_structure_parentDirectory.png">
+						<pre><code class = "html">
+<!-- index.html -->
+
+  <img src="/images/logo.png">
+
+						</code></pre>
+					</section>
+					<section>
+						<ul>
+								<li>
+									<b>.JPEG:</b> 
+									<ul>
+										<li>No transparency, can be stored at different compression levels with varying amounts of "lossy-ness", typically the best format for photos. (Try to balance between photo quality and file size.)</li>
+									</ul>
+								</li>
+
+								<li>
+									<b>.GIF:</b> 
+									<ul>
+										<li>Can have basic transparency, typically a png is used instead.
+										</li>
+									</ul>
+								</li>
+								<li>
+									<b>.PNG:</b>
+									<ul>
+										<li>
+										 Supports transparency and semi-transparency, great for logos, icons, and repeating background tiles. Almost always preferable to a gif, unless semi-transparency is not needed, and the gif format is significantly smaller.
+										</li>
+									</ul>
+								</li>
+						</ul>
+					</section>
+				</section>
+
+			  <!--  -->
+				<section>
+					<h2>Try it yourself:</h2>
+					<ul>
+					  <li>Create a new folder in your repository called MyApp</li>
+						<li>Add folders inside that called CSS, HTML, and Images</li>
+						<li>Add an HTML page to the HTML folder</li>
+						<li>Add some Images to the Images folder</li>
+						<li>Build a simple HTML page with the Images</li>
+					</ul>
+				</section>
+
+
+			  <!--  -->
+				<section>
+					<section>
+						<p>Anchor Tag</p>
+
+						<pre><code class = "html">
+<a></a>
+<a href=""></a>
+	          </code></pre>
+	          <p>href can be a URL</p>
+						<pre><code class = "html">
+<a href="www.google.com"></a>
+	          </code></pre>
+	          <p>Source can be a relative path</p>
+						<pre><code class = "html">
+<a href="pages/home.html"></a>
+	          </code></pre>
+	          <p>Source can be a absolute path</p>
+						<pre><code class = "html">
+<a href="/myapp/pages/home.html"></a>
+	          </code></pre>
+	         </section>
+					<section>
+						<h2>Try it yourself:</h2>
+						<ul>
+						  <li>Create a new folder in your repository called NewApp</li>
+							<li>Add folders inside that called CSS, HTML, and Images</li>
+							<li>Add an HTML page to the HTML folder called home.html</li>
+							<li>Add an HTML page to the HTML folder called about.html</li>
+							<li>Build a simple HTML page that links from one to the other</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- CSS-->
+				<section data-background="#ccc">
+          <h1 style="color: #000;">CSS</h1>
+        </section>
+
+			  <!-- image tag  -->
+				<section>
+					<section>
+						<h2>CSS</h2>
+						<p>Cascasing Style Sheet</p>
+						<ul>
+							<li>What is it for?</li>
+							<li>Where does it go?</li>
+							<li>How does it work?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS</h2>
+						<p>What is it for?</p>
+						<ul>
+							<li>Adding style to our page and elements</li>
+							<li>Fonts, colors, sizes, etc</li>
+							<li>Layouts, formatting</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS</h2>
+						<p>Where does it go?</p>
+						<ul>
+							<li>In-Line</li>
+							<li>In the HTML Head</li>
+							<li>Separate file</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>CSS</h2>
+						<p>How does it work?</p>
+						<p>We write RULES</p>
+						<img src="../../img/css_basic.png">
+						<pre><code class = "css">
+div {
+	background-color: red;
+}
+
+li {
+	height: 100px;
+}
+	          </code></pre>
+					</section>
+					<section>
+						<h2>CSS</h2>
+						<p>Selector</p>
+						<pre><code class = "css">
+p 
+	          </code></pre>
+						<p>Declaration block</p>
+						<pre><code class = "css">
+p {
+	
+}
+	          </code></pre>
+						<p>Property and value</p>
+						<pre><code class = "css">
+p {
+	color: red
+}
+	          </code></pre>
+					</section>
+					<section>
+						<h2>CSS</h2>
+						<p>Colors</p>
+						<p>Keyword, hex codes, rgb, rgba, hsl, hsla</p>
+						<pre><code class = "css">
+p {
+  color: red,
+}
+
+p {
+  color: #df4fdf,
+}
+
+p {
+  color: rgba(255,255,255,1),
+}
+	          </code></pre>
+					</section>
+	
+				</section>
+
+
+			  <!-- CSS -->
+				<section>
+					<h2>CSS:</h2>
+					<p>More about CSS</p>
+					<ul>
+					  <li>Cascading</li>
+						<li>Specificity</li>
+						<li>Inheritance</li>
+					</ul>
+				</section>
+
+			  <!-- HTML Practice -->
+				<section>
+					<p>Outline the HTML of the following</p>
+					<img src="starter_code/images/about_me_deliverable.png">
+				</section>
+
+			  <!-- HTML Practice -->
+				<section>
+					<p>Write the HTML for the following</p>
+					<img src="starter_code/images/about_me_deliverable.png">
+				</section>
+
+			  <!-- HTML Practice -->
+				<section>
+					<p>Write the CSS for the following</p>
+					<img src="starter_code/images/about_me_deliverable.png">
+				</section>
+
+			  <!-- HTML Practice -->
+				<section>
+					<p>Outline the HTML, code the HTML, and code the CSS</p>
+					<img src="starter_code/images/portfolio_deliverable.png">
+				</section>
+
+				<section>
+					<p>HTML Resources</p>
+					<p>CSS Resources</p>
+				</section>
+
+				<section>
+					<h1>Homework</h1>
+
+					<p>Practice: <a href="https://www.codecademy.com/learn/web">CodeSchool</a></p>
+					<p>Review: Slides and new tools/resources</p>
+					<p>Code: Complete Portfolio Page</p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="../../reveal/lib/js/head.min.js"></script>
+		<script src="../../reveal/js/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
