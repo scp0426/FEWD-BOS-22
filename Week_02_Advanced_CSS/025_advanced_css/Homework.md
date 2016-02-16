@@ -3,21 +3,15 @@
  
 =======
 
-* Review: 
-  * https://github.com/ga-students/FEWDBOS18/blob/master/Week_02_Advanced_CSS/025_advanced_css/Resources.md
 
 * Code: 
   * Complete tne Relaxr Landing Page
-  * Starter code located https://github.com/ga-students/FEWDBOS18/tree/master/Week_02_Advanced_CSS/025_advanced_css/starter_code
+  * Starter code located https://github.com/ga-students/FEWD-BOS-22/tree/master/Week_02_Advanced_CSS/025_advanced_css/starter_code
 
-* Read / Practice:
+* Read:
   * Read about CSS Selectors: http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
   * Read about CSS3 Properties: http://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417
   * Read about HTML5: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
-  * Read about Sublime Text shortcuts: https://blog.generalassemb.ly/sublime-text-3-tips-tricks-shortcuts/
-
-* Challenge:  
-  * Read about CSS3 transitions and transforms, upon hovering over the main title on the page, implement either one of those (your choice)
 
 
 * Grading Rubric
@@ -26,6 +20,11 @@
   * Used psuedo classes to made Benefits list bold (4 points)
   * Used CSS3 box-shadow on "get it now" button (4 points)
 
+* Review if helpful: 
+  * HTML Resource List:
+    * https://github.com/ga-students/FEWD-BOS-22/blob/master/Week_01_Github_HTML_CSS/01_html_basics/resources.md
+  * CSS Resource List:
+    * https://github.com/ga-students/FEWD-BOS-22/blob/master/Week_01_Github_HTML_CSS/02_css_basics/Resources.md
 
 Relaxr Landing Page: 
 ==================
