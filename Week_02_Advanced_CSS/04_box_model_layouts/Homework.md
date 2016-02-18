@@ -3,18 +3,15 @@
  
 =======
 
-* Review: 
-  * Tonight's slides: https://github.com/ga-students/FEWDBOS18/blob/master/Week_03_Layouts/01_box_model_layouts/slides.html
 
 * Watch:
   * https://www.youtube.com/watch?v=xara4Z1b18I
 
-* Read:
+* Read (SOO HELPFUL!!):
   * http://alistapart.com/article/css-floats-101/
 
 * Code: 
-  * Submit all layouts in the Layout Challenge PDF. Inside homework/day4 folder, please create a separate folder for each layout.
-  * If you finish that, begin looking at the homework for Wednesday night inside "Week_03_Layouts/Assignment". By the end of the weekend, you will be submitted the complete Relaxr blog with a two-column layout. 
+  * Submit all layouts in the Layout Challenge PDF.
 
 * Grading Rubric
   * 16/16 - All layouts inside PDF challenge complete. Each layout should look close to the design
