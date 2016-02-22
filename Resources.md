@@ -3,6 +3,9 @@
 
 ##HTML Basics
 
+* HTML Documentation
+	* https://developer.mozilla.org/en-US/docs/Web/Guide/HTML
+	
 * HTML Reference Guide
 	* http://www.w3schools.com/html/default.asp
   * http://www.w3schools.com/tags/ref_byfunc.asp
@@ -30,6 +33,9 @@
 	* https://validator.w3.org/#validate_by_input
 
 ##CSS Basics
+
+* CSS Documentation
+	* https://developer.mozilla.org/en-US/docs/Web/CSS
 
 * CSS Selectors
   * http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
