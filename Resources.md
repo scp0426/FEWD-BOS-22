@@ -66,6 +66,9 @@
 
 ##CSS Layouts
 
+* CSS Tricks Floats
+	* https://css-tricks.com/almanac/properties/f/float/
+	
 * Video Explanation of CSS Float Property 
   * https://www.youtube.com/watch?v=xara4Z1b18I
 
