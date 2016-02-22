@@ -46,6 +46,9 @@
 * CSS Specificity and Inheritance
   * http://www.smashingmagazine.com/2010/04/css-specificity-and-inheritance/
 
+* How the nth-child Works
+	* https://css-tricks.com/how-nth-child-works/
+
 * CSS nth-child Tester
   * https://css-tricks.com/examples/nth-child-tester/#
 
