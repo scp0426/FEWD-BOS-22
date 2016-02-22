@@ -13,19 +13,14 @@
   * http://apps.workflower.fi/vocabs/html/en
 
 * HTML Element Cheat Sheets
-  * PDF Alphebetical http://websitesetup.org/html5-cheat-sheet/
-  * Elements by function http://www.w3.org/TR/html-markup/elements-by-function.html
-  * Good examples of usage http://htmldog.com/reference/htmltags/
-  * Good examples of browser rendering https://computerservices.temple.edu/commonly-used-html-tags
-
-* HTML Common Element Attributes
-  * http://www.simplehtmlguide.com/cheatsheet.php
-  
-* HTML Tutorials
-  * http://htmldog.com/guides/html/beginner/
-
-* HTML Tags vs Elements
-  * https://stackoverflow.com/questions/8937384/what-is-the-difference-between-tags-and-elements-html
+  * https://simon.html5.org/html-elements
+  * https://computerservices.temple.edu/commonly-used-html-tags
 
 * Choosing HTML Sectioning Elements
 	* http://blog.teamtreehouse.com/use-html5-sectioning-elements
+
+* Getting to Know HTML 
+  * http://learn.shayhowe.com/html-css/getting-to-know-html/
+
+* CodeAcademy 1 - 3 
+  * https://www.codecademy.com/en/tracks/web

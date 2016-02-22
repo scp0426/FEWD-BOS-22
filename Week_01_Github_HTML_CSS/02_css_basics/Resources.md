@@ -23,5 +23,14 @@
 * Codepen: HTML and CSS Practice
 	* http://www.codepen.io
 
-* HTML and CSS Foundation Tutorials
+* Getting to Know CSS 
+	* http://learn.shayhowe.com/html-css/getting-to-know-css/
+
+* CodeAcademy Units 4 & 5 
 	* https://www.codecademy.com/en/tracks/web
+
+* Can I Use Tool
+	* http://caniuse.com/
+
+* CSS Validator Tool
+	* http://www.css-validator.org/
