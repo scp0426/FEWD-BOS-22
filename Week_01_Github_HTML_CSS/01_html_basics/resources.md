@@ -19,6 +19,9 @@
 * Choosing HTML Sectioning Elements
 	* http://blog.teamtreehouse.com/use-html5-sectioning-elements
 
+* HTML Common Attributes
+	* http://www.elizabethcastro.com/html/extras/xhtml_ref.html
+
 * Getting to Know HTML 
   * http://learn.shayhowe.com/html-css/getting-to-know-html/
 

@@ -2,6 +2,9 @@
 
 ##Resources
 
+* CSS Centering
+	* https://css-tricks.com/centering-css-complete-guide/
+
 * CSS Tricks Floats
 	* https://css-tricks.com/almanac/properties/f/float/
 	

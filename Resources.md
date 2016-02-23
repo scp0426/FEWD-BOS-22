@@ -20,6 +20,9 @@
   * https://simon.html5.org/html-elements
   * https://computerservices.temple.edu/commonly-used-html-tags
 
+* HTML Common Attributes
+	* http://www.elizabethcastro.com/html/extras/xhtml_ref.html
+
 * Choosing HTML Sectioning Elements
 	* http://blog.teamtreehouse.com/use-html5-sectioning-elements
 
@@ -66,6 +69,9 @@
 
 ##CSS Layouts
 
+* CSS Centering
+	* https://css-tricks.com/centering-css-complete-guide/
+	
 * CSS Tricks Floats
 	* https://css-tricks.com/almanac/properties/f/float/
 	
@@ -104,6 +110,9 @@
 
 * Transforms, Transitions, and Animations 
 	* http://css3.bradshawenterprises.com/
+
+* CSS3 Properties Interactive Chart
+	* http://css3clickchart.com/
 
 * Should I Prefix Tool
 	* http://shouldiprefix.com/
