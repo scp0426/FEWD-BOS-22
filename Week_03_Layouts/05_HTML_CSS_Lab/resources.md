@@ -13,3 +13,9 @@
 
 * Advanced Positioning 
   * http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/
+
+* Inline Elements
+  * https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+* Block Level Elements
+  * https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements

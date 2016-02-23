@@ -23,6 +23,12 @@
 * HTML Common Attributes
 	* http://www.elizabethcastro.com/html/extras/xhtml_ref.html
 
+* Inline Elements
+	* https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
+
+* Block Level Elements
+	* https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+
 * Choosing HTML Sectioning Elements
 	* http://blog.teamtreehouse.com/use-html5-sectioning-elements
 

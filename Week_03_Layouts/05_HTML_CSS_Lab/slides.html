@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+				<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js">
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -55,16 +56,52 @@
 					</ul>
 				</section>
 
-				<!-- Relative Positioning-->
+				<!-- Display Positioning-->
+				<section data-background="#ccc">
+          <h1 style="color: #000;">Display Property</h1>
+        </section>
+
+		       <section>
+		         <h3>Display Property</h3>
+		         <section>
+ 			         <p>All elements have a display property of either none, block, inline, or inline-block.</p>
+			         <p>Most are block.</p>
+
+
+
+		         </section>
+
+		         <section>
+			         <p>	Block level elements begin on a new line, stacking one on top of the other, and occupy any available width. Block-level elements may be nested inside one another and may wrap inline-level elements. We’ll most commonly see block-level elements used for larger pieces of content, such as paragraphs.</p>
+		<pre><code class="css">
+			<p>This wil be on 1 line</p>
+  		<h2>This will be on the next line</h2>
+  		<div>This will be on the line after that</div>
+		</code></pre>
+		         </section>
+		         <section>
+			         <p>Inline level elements do not begin on a new line. They fall into the normal flow of a document, lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; however, they cannot wrap block-level elements. We’ll usually see inline-level elements with smaller pieces of content, such as a few words.</p>
+			         <p>Inline-block level are similar but can be used with elements that are usually block.  Inline-block also has slight differences than inline such as inline-block elements can have a width but inline elements can not.</p>
+		<pre><code class = "html">
+			<p>As you can see, <span style="color: red;">this span will be on the same line</span> and so will <a href="www.generalassemb.ly">This link here</a>.</p>
+		</code></pre>
+		         </section>
+		       </section>
+
+					<!-- Posiiton property-->
+					<section data-background="#ccc">
+	          <h1 style="color: #000;">Position Property</h1>
+	        </section>
+        
 		       <section>
 		         <h3>Relative Positioning</h3>
 		         <div class = "left-align">
-		         <ul>
-		         <li>Takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
-		         <li>Does not affect the elements surrounding it.</li>
-		         <li>Makes an element a "positioning context" in which to position other elements relative to it.</li>
-		         <li>Relative positioning and absolute positioning are used together.</li>
-		         </ul>
+			         <ul>
+				         <li>Takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
+				         <li>Does not affect the elements surrounding it.</li>
+				         <li>Makes an element a "positioning context" in which to position other elements relative to it.</li>
+				         <li>Relative positioning and absolute positioning are used together.</li>
+			         </ul>
 		         </div>
 		       </section>
 		       
@@ -117,8 +154,8 @@
 		<pre><code class = "html">
 		  .bottom{
 		    position: absolute; 
-		    bottom: -40px; 
-		    left:60px; 
+		    bottom: 0px; 
+		    left:-200px; 
 		    background-color: green
 		  }
 		</code></pre>
@@ -127,7 +164,7 @@
 		           background-color: yellow; color:black">
 		          Up here
 		         </div>
-		       <div style="position: absolute; bottom: -40px; left:60px; 
+		       <div style="position: absolute; bottom: 0px; left:-200px; 
 		         background-color: green">
 		          Down here
 		         </div>
@@ -151,23 +188,21 @@
 		<pre><code class ="html">
 		  .bottom{
 		    position: absolute; 
-		    bottom: 10px; 
+		    top: 0px; 
 		    left:60px; 
 		    background-color: yellow;
 		  }
-		</code></pre>
-		<pre><code class ="html">
 		  .top{
 		    position: absolute; 
-		    bottom: 15px; 
+		    top: 0px; 
 		    left:60px; 
 		    background-color: green; 
 		    z-index: 2;
 		  }
 		</code></pre>
-		        <div style="position: absolute; bottom: -20px; left:60px; 
+		        <div style="position: absolute; top: 0; left:60px; 
 		          background-color: yellow; color:black"> Bottom </div>
-		        <div style="position: absolute; bottom: -15px; left:60px; 
+		        <div style="position: absolute; top: 0px; left:60px; 
 		          background-color: green; z-index: 2; "> Top </div>
 		       </section>
 
