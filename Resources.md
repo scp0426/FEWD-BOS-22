@@ -29,6 +29,12 @@
 * Block Level Elements
 	* https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
 
+* Inline-Block Elements
+	* http://stackoverflow.com/questions/21614938/html-element-which-defaults-to-displayinline-block
+	
+* Inline vs Inline-Block
+	* http://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block
+
 * Choosing HTML Sectioning Elements
 	* http://blog.teamtreehouse.com/use-html5-sectioning-elements
 
