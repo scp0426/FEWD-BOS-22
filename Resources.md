@@ -134,3 +134,14 @@
 
 * How to Center in CSS Tool
 	* http://howtocenterincss.com/
+
+#Javascript Basics
+
+* Mozilla 
+	* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+* w3schools
+	* http://www.w3schools.com/js/default.asp
+	
+* Javascript Cheat Sheet
+	* http://thewebivore.com/wp-content/uploads/2013/02/PamsJavascriptCheatSheet.pdf
