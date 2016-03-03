@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GA Week 3 - Box Model</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+        <section>
+          <h1>FINAL PROJECTS</h1>
+          <h3>yahhhhhh! The rule!</h3>
+        </section>
+
+				<!-- Opening-->
+				<section>
+					<h1>LESSON 8</h1>
+					<h3>More Javascript Programming</h3>
+				</section>
+
+
+				<!-- Agenda-->
+				<section>
+					<h1>Agenda</h1>
+					<ul>
+						<li>Review programming concepts</li>
+            <li>POP.ular(quiz)</li>
+						<li>Functions</li>
+            <li>Conditions</li>
+						<li>Rocks, Paper, Scissors Lab</li>
+					</ul>
+				</section>
+
+        <!-- Review -->
+        <section>
+          <h3>Javascript Review</h3>          
+          <div style="float:left; width:20%;">
+            <p>Comments</p>
+            <p>Variables</p>
+          </div>
+          <div style="float:left; width:20%;">
+            <p>Numbers</p>
+            <p>Strings</p> 
+          </div>
+          <div style="float:left; width:20%;">     
+            <p>Operators</p>
+            <p>Booleans</p>
+          </div>
+          <div style="float:left; width:20%;">
+            <p>Arrays</p>
+            <p>Objects</p>
+          </div>
+          <div style="float:left; width:20%;">  
+            <p>*null</p>
+            <p>*undefined</p>
+          </div>
+        </section>
+
+        <section style="font-size: 24px">
+          <section>
+            <h3>POP.ular(quiz);</h3>
+            <h5>Variables</h5>  
+            <ol>
+              <li>Define a variable called userName but do no assign it a value</li>
+              <li>Define two variables in 1 line called userPhone and userAddress but do no assign them a value</li>
+              <li>Define a variable called animal on one line and on the next line assign the variable animal the value of the string "Cat"</li>
+              <li>Define a variable called worseAnimal and assign the variable worseAnimal the value of the string "Dog" in 1 line</li>
+              <li>Define a variable called bestAnimal and assign the variable bestAnimal the value of the string "Bat" in 1 line and on the same line define a variable called lostanimal but do not assign it a value</li>
+            </ol>  
+          </section>
+          <section>
+            <h3>POP.ular(quiz);</h3>
+            <h5>Numbers and Strings</h5>  
+            <ol>
+              <li>What is 7%2?</li>
+              <li>What is 6%2?</li>
+              <li>What is 2 + 2?</li>
+              <li>What is "Cat" + "Dog"?</li>
+              <li>What is "2" + "2"?</li>
+              <li>What is 2 + "2"?</li>
+              <li>Create a variable called numberOne and assign it a value of 5 in 1 line</li>
+              <li>Increment the value assigned to the variable numberOne by 1</li>
+              <li>Decrease the value assigned to the variable numberOne by 1</li>
+              <li>Incrase the value assigned to the variable numberOne by 10</li>
+            </ol>
+          </section>
+          <section>
+            <h3>POP.ular(quiz);</h3>
+            <h5>Booleans</h5> 
+            <ol>
+              <li>Is 5 > 1?</li>
+              <li>Is "cat" > "Cat"?</li>
+              <li>Is 5 == "5"?</li>
+              <li>Is 5 === "5"?</li>
+              <li>Does 5 !== 5?</li>
+            </ol>
+          </section>
+          <section>
+            <h3>POP.ular(quiz);</h3>
+            <h5>Arrays</h5> 
+            <ol>
+             <li>Create an array with 4 strings of animals of your choice in it.</li>
+              <li>Retrieve the first animal from the array</li>
+              <li>Add an animal to the end of the array</li>
+              <li>Change the second animal in the array to be "Squirrel"</li>
+            </ol>
+          </section>
+          <section>
+            <h3>POP.ular(quiz);</h3>
+            <h5>Objects</h5> 
+            <ol>
+             <li>Create a car object with property and value pairs of model: string, year: number, and color: string</li>
+              <li>Retrieve the cars model</li>
+              <li>Retrieve the cars year</li>
+              <li>Add a property/value pair to the object called visitedTowns:array which is an array of town names</li>
+              <li>Add a property/value pair to the object called owner:object which is an object representing a person that has property/value pairs of name:string and age:number</li>
+              <li>Change the value of the car's model to "Ford"</li>
+              <li>Change the age of the owner to 150</li>
+            </ol>
+          </section>
+
+        </section>
+
+        <section>
+          <h3>Functions</h3>
+          <p>A function is a JavaScript procedure — a set of statements that performs a task or calculates a value</p>
+<pre><code class = "js">
+  // the syntax is
+  functionName();
+
+  // this basic function triggers an alert pop up
+  alert();
+
+  // functions can be called on other data types
+  console.log();
+
+  // functions can accept other data types as parameters 
+  console.log("Log this message to the console.");
+
+  // functions can accept 0 parameters or many, it depends on the function
+  alert();
+  alert("Hello");
+  alert("Alert the user this", " and alert the user this!", " Oh and this too!");
+
+  // What do you think this function would do?
+  add(1, 2, 200);
+
+  // Try these!
+  (100 + 23).valueOf();
+  parseInt("10.33");
+  "Welcome to General Assembly".replace("General Assembly", "Mike's Class");
+
+
+</code></pre>
+        </section>
+        <!-- Data Types-->
+        <section>
+          <h3>Get to know your data type methods</h3>
+          <p>String Functions/m</p>
+          <p><a href="http://www.w3schools.com/js/js_string_methods.asp">w3schools</a></p>
+          <ul>
+            <li> + and concat()</li>
+            <li>.length</li>
+            <li>.indexOf()</li>
+            <li>.slice()</li>
+            <li>.replace()</li>  
+            <li>Special Characters</li>
+          </ul>
+ 
+        </section>
+        <section>
+          <h3>Get to know your data type methods</h3>
+          <p>Number functions</p>
+          <p><a href="http://www.w3schools.com/js/js_number_methods.asp">w3schools</a></p>
+          <ul>
+        </section>
+        <section>
+          <h3>Get to know your data type methods</h3>
+          <p>Array functions</p>
+          <p><a href="http://www.w3schools.com/js/js_array_methods.asp">w3schools</a></p>
+          <ul>
+            <li>.length</li>
+            <li>.push()</li>
+            <li>.pop()</li>
+            <li>.indexOf()</li>
+            <li>.join()</li>
+            <li>.reverse()</li>
+          </ul>
+        </section>
+
+
+
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>Conditional statements are used to perform different actions based on different conditions.</p>
+          <ul>
+            <li>If</li>
+            <li>else</li>
+            <li>else if</li>
+          </ul>
+        </section>
+
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>If</p>
+          <pre><code class = "js">
+if (condition) {
+    block of code to be executed if the condition is true
+}
+          </code></pre>
+        </section>
+
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>If</p>
+          <pre><code class = "js">
+var target_temp = 72;
+var room_temp = 80;
+
+if (room_temp < target_temp){
+  // turn on heat
+}
+
+          </code></pre>
+
+        </section>
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>If</p>
+          <pre><code class = "js">
+if (condition) {
+    block of code to be executed if the condition is true
+} else { 
+    block of code to be executed if the condition is false
+}
+          </code></pre>
+        </section>
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>Else</p>
+          <pre><code class = "js">
+var target_temp = 72;
+var room_temp = 80;
+
+if (room_temp < target_temp){
+  // turn on heat
+} else {
+  // turn off heat
+}
+          </code></pre>
+        </section>
+
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>If</p>
+          <pre><code class = "js">
+if (condition1) {
+    block of code to be executed if condition1 is true
+} else if (condition2) {
+    block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    block of code to be executed if the condition1 is false and condition2 is false
+}
+          </code></pre>
+        </section>
+        <!-- Conditionals-->
+        <section>
+          <h3>Conditionals</h3>
+          <p>Else if</p>
+          <pre><code class = "js">
+var target_temp = 72;
+var room_temp = 80;
+
+if (room_temp < target_temp){
+  // turn on heat
+} else if (room_temp > target_temp){
+  // turn off heat
+} else {
+  // do not change
+}
+          </code></pre>
+        </section>
+        <section>
+          <h3>Conditionals</h3>
+          <ul>
+            <li><a href="http://www.w3schools.com/js/js_operators.asp">http://www.w3schools.com/js/js_operators.asp</a></li>
+            <li> == </li>
+            <li> === </li>
+            <li> != </li>
+            <li>!== </li>
+            <li> > </li>
+            <li> < </li>
+            <li> >= </li>
+            <li> <= </li>
+          </ul>
+        </section>
+
+        <!-- Agenda-->
+        <section>
+          <h3>Loops</h3>
+        </section>
+
+
+      <!-- While Loops-->
+      <section>
+          <h3>While Loop</h3>
+          <pre><code class = "js">
+while (condition) {
+    code block to be executed
+}
+          </code></pre>
+        </section>
+
+        <!-- While-->
+        <section>
+          <h3>While Loop</h3>
+          <pre><code class = "js">
+while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}
+          </code></pre>
+        </section>
+
+        <!-- For Loops-->
+        <section>
+          <section>
+            <h3>For Loop</h3>
+            <p>For</p>
+            <pre><code class = "js">
+  for (counter, limit; condition; counter_increment) {
+    code block to be executed
+  }
+
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+
+  for (var counter = 0, limit = 5; counter < limit; counter++) {
+      console.log("The number is " + counter);
+  }
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+  var animalArray = ["Cat", "Dog", "Fish"];
+
+  for (var counter = 0, limit = animalArray.length; counter < limit; counter++) {
+      console.log("The animal is " + animalArray[counter)];
+  }
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+  var animalArray = ["Cat", "Dog", "Fish"];
+
+  for (var i = 0, j = animalArray.length; i < j; i++) {
+      console.log("The animal is " + animalArray[i)];
+  }
+            </code></pre>
+          </section>
+        </section>
+
+
+        <!-- For Loops-->
+        <section>
+          <h3>Loops</h3>
+          <p>Practicing For Loops with a partner</p>
+          <ul>
+            <li>Alert numbers 1 - 10</li>
+            <li>Alert numbers 10 - 0</li>
+            <li>Alert odd numbers 1 - 10 </li>
+          </ul>
+        </section>
+
+
+        <!-- Functions-->
+        <section>
+          <h3>Functions</h3>
+          <p>What is a function?</p>
+          <p>Why would we use it?</p>
+        </section>
+
+        <section>
+          <h3>Functions</h3>
+          <p>A JavaScript function is a block of code designed to perform a particular task.
+          </p>
+          <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+        </section>
+
+        <!-- Functions-->
+        <section>
+        <section>
+          <h3>Functions Syntax</h3>
+          <img src="https://github.com/generalassembly-studio/FEWD_Curriculum/raw/master/img/unit_2/functions_syntax.png">
+          </section>
+          <section>
+          <h3>Function definiton vs call</h3>
+          <img src="https://github.com/generalassembly-studio/FEWD_Curriculum/raw/master/img/unit_2/function_calls.png">
+          </section>
+        </section>
+
+        <!-- Functions-->
+        <section>
+        <section>
+          <h3>Function arguments</h3>
+          <img src="https://github.com/generalassembly-studio/FEWD_Curriculum/raw/master/img/unit_2/argument_syntax.png">
+          </section>
+          <section>
+          <pre><code class = "js">
+// no arguments
+function sayHello(){
+  alert("Hello Person");
+}
+
+// 1 argument
+function sayHelloToPerson(name){
+  alert("Hello " + name);
+}
+
+sayHello();
+sayHelloToPerson("Mike");
+          </code></pre>
+          </section>
+        </section>
+
+        <!-- Functions-->
+        <section>
+          <h3>Function returns</h3>
+          <pre><code class = "js">
+function add(num1, num2){
+  return num1 + num2;
+}
+
+var sum = add(2, 2);
+
+          </code></pre>
+        </section>
+
+        <!-- Functions-->
+        <section>
+          <h3>Let's write our first function</h3>
+          <p>With your group on the wall write a function called greatestNumber that accepts two arguments called "num1" and num2" and returns the larger of the two or return "equal"
+        </section>
+
+
+
+
+
+
+
+        <!-- forEach Loops-->
+        <section>
+          <h3>Loops</h3>
+          <p>Array Method .forEach()</p>
+
+<pre><code class = "js">
+// our array
+var students = ["Charlie", "Lucy", "Snoopy"];
+
+// for each method with no parameter
+students.forEach();
+
+// for each method with a function as a paramater
+students.forEach(function(element,index){
+    alert(element);
+});
+
+</code></pre>
+        </section>
+
+
+				<!-- Psuedo code-->
+        <section>
+          <h3>Pseudo code</h3>
+          <p>Pseudocode is the process of writing a program without using the syntax of a programming language.</p>
+          <h4>Write the psuedo code for Rocks, Paper, Scissors on the wall in groups of 3.</h4>
+        </section>
+        <section>
+          <h3>Pseudo code RPS</h3>
+            <pre><code class = "js">
+// user select rocks, paper or scissors
+
+// computer randomly selects rock paper or scissors
+
+// if computers selection == rock
+//      if user selection == paper
+//          then user win
+//      else if  user election == scissors
+//          then computer win
+//      else if  user election == rock
+//          then tie
+// else if computers selection == scissors
+//      if user selection == paper
+//          then computer win
+//      else if  user election == rock
+//          then user win
+//      else 
+//          then tie
+// else
+//      if user selection == rock
+//          then compuer win
+//      else if user election == scissor
+//          then user win
+//      else 
+//          then tie
+          </code></pre>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- Lab / HW-->
+        <section>
+          <h3>Rocks, Paper, Scissors Intro</h3>
+        </section>
+
+
+
+
+
+			</div>
+
+		</div>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js" type="text/javascript"></script>
+
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+	</body>
+</html>
