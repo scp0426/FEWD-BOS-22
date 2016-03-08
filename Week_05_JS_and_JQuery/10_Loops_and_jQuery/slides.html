@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GA Week 5 - Class 9</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../../reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>LESSON 9</h1>
+					<h3>Advanced JS</h3>
+				</section>
+
+        <section>
+          <h3>Learning Objectives</h3>
+          <p>Define variables and identify best cases to use them.</p>
+          <p>Differentiate between strings, integers and floats.</p>
+          <p>Apply conditionals to change the programs control flow.</p>
+        </section>
+
+				<section>
+					<h3>Schedule</h3>
+					<ul>
+            <li>jQuery Review (15 min)</li>
+            <li>Variables (40 min) </li>
+            <li>Conditionals (50 min) </li>
+            <li>Weather Application (60 min) </li>
+					</ul>
+				</section>
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">You Do: jQuery Dom Selector Review</h1>
+            <p>Complete all questions in the exercise.js file. We've added the script tags for you.</p>
+            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/jquery_dom_selector_practice</p>
+        </section>
+
+				<section>
+					<h3>Variables</h3>
+          <p>What are variables?</p>
+				</section>
+
+        <section>
+          <h3>Variables</h3>
+          <ul>
+            <li>We can tell our program to remember values for us to use later on.</li>
+            <li>The action of saving a value to memory is called assignment</li>
+            <li>The entity we use to store the value is called a variable</li>
+            <li>The action of getting the value from a variable is called accessing the variable</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Variables Declation</h3>
+          <p>Declaration</p>
+          <pre><code class = "js">
+var age;
+          </code></pre>
+
+          <p>Assignment</p>
+          <pre><code class = "js">
+age = 21;
+          </code></pre>
+
+           <p>Both</p>
+          <pre><code class = "js">
+var age = 21;
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Variables Re-assignment</h3>
+          <pre><code class = "js">
+var name = "Laura";
+          </code></pre>
+
+          <pre><code class = "js">
+name = "Mike";
+          </code></pre>
+
+           <p>Note: Now the variable "name" equals "Mike".</p>
+        </section>
+
+        <section>
+          <h3>Variable Conventions</h3>
+          <p>Variables start with a lower case letter.</p>
+          <p>If they contain multiple words, subsequent words start with an upper case letter.</p>
+          <pre><code class = "js">
+var numberOfStudents = 10;
+          </code></pre>
+        </section>
+
+
+        <section>
+          <h3>Variables &amp; Data Types</h3>
+          <p>What can you store in variables?</p>
+        </section>
+
+        <section>
+          <h3>Supported Data Types</h3>
+          <ul>
+            <li><strong>String</strong> = text</li>
+            <li><strong>Int / Float</strong> = number</li>
+            <li><strong>Boolean</strong> = true/false</li>
+          </ul>
+        </section>
+   <!-- Agenda-->
+        <section>
+          <h3>Loops</h3>
+        </section>
+
+
+      <!-- While Loops-->
+      <section>
+          <h3>While Loop</h3>
+          <pre><code class = "js">
+while (condition) {
+    code block to be executed
+}
+          </code></pre>
+        </section>
+
+        <!-- While-->
+        <section>
+          <h3>While Loop</h3>
+          <pre><code class = "js">
+while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}
+          </code></pre>
+        </section>
+
+        <!-- For Loops-->
+        <section>
+          <section>
+            <h3>For Loop</h3>
+            <p>For</p>
+            <pre><code class = "js">
+  for (counter, limit; condition; counter_increment) {
+    code block to be executed
+  }
+
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+
+  for (var counter = 0, limit = 5; counter < limit; counter++) {
+      console.log("The number is " + counter);
+  }
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+  var animalArray = ["Cat", "Dog", "Fish"];
+
+  for (var counter = 0, limit = animalArray.length; counter < limit; counter++) {
+      console.log("The animal is " + animalArray[counter)];
+  }
+            </code></pre>
+          </section>
+          <section>
+            <p>Example</p>
+            <pre><code class = "js">
+  var animalArray = ["Cat", "Dog", "Fish"];
+
+  for (var i = 0, j = animalArray.length; i < j; i++) {
+      console.log("The animal is " + animalArray[i)];
+  }
+            </code></pre>
+          </section>
+        </section>
+
+
+        <!-- For Loops-->
+        <section>
+          <h3>Loops</h3>
+          <p>Practicing For Loops with a partner</p>
+          <ul>
+            <li>Alert numbers 1 - 10</li>
+            <li>Alert numbers 10 - 0</li>
+            <li>Alert odd numbers 1 - 10 </li>
+          </ul>
+        </section>
+        <!-- Starter code is included to save you time. It is helpful to demo the final product before coding. For beginners, it helps to know the end product before coding. Give students time to look through the HTML code. You can make changes to work with other data types. 
+        -->
+        
+        <section data-background="#ccc">
+            <h1 style="color: #000;">We Do: Score Keeper Exercise</h1>
+            <p>Add functionality to update "result" based on which button is clicked.</p>
+            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/score_keeper</p>
+        </section>
+
+        <!-- solution: https://github.com/generalassembly-studio/FEWD_Curriculum/blob/master/Week_05_JS_ComputerScience/09_variables_conditionals/solutions/score_keeper/js/index.js -->
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">We Do: Compare That Exercise</h1>
+            <p>Based on the numbers added to the inputs, add which comparison operator should be in the middle.</p>
+            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/compare_that</p>
+        </section>
+
+        <!-- solution: https://github.com/generalassembly-studio/FEWD_Curriculum/tree/master/Week_05_JS_ComputerScience/09_variables_conditionals/solutions/compare_that -->
+
+        <section> 
+          <h1>Homework</h1>
+          <ul>
+            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/citypix">CityPix Application</a></li>
+            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/relaxr">Relaxr Blog(jQuery Practice)</a></li>
+            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/project-wireframes">Final Project Wireframes</a></li>
+        </section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="../../reveal/lib/js/head.min.js"></script>
+		<script src="../../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

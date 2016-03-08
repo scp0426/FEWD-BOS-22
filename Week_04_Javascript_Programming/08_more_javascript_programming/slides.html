@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>GA Week 3 - Box Model</title>
+		<title>GA Week 4 - JS</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -41,7 +41,7 @@
 
         <section>
           <h1>FINAL PROJECTS</h1>
-          <h3>yahhhhhh! The rule!</h3>
+          <h3>yahhhhhh! They rule!</h3>
         </section>
 
 				<!-- Opening-->
@@ -57,8 +57,10 @@
 					<ul>
 						<li>Review programming concepts</li>
             <li>POP.ular(quiz)</li>
-						<li>Functions</li>
+						<li>Using Functions</li>
             <li>Conditions</li>
+            <li>Loops</li>
+            <li>Creating Functions</li>
 						<li>Rocks, Paper, Scissors Lab</li>
 					</ul>
 				</section>
@@ -188,7 +190,7 @@
         <!-- Data Types-->
         <section>
           <h3>Get to know your data type methods</h3>
-          <p>String Functions/m</p>
+          <p>String Methods</p>
           <p><a href="http://www.w3schools.com/js/js_string_methods.asp">w3schools</a></p>
           <ul>
             <li> + and concat()</li>
@@ -202,13 +204,13 @@
         </section>
         <section>
           <h3>Get to know your data type methods</h3>
-          <p>Number functions</p>
+          <p>Number Methods</p>
           <p><a href="http://www.w3schools.com/js/js_number_methods.asp">w3schools</a></p>
           <ul>
         </section>
         <section>
           <h3>Get to know your data type methods</h3>
-          <p>Array functions</p>
+          <p>Array Methods</p>
           <p><a href="http://www.w3schools.com/js/js_array_methods.asp">w3schools</a></p>
           <ul>
             <li>.length</li>
@@ -221,211 +223,11 @@
         </section>
 
 
-
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>Conditional statements are used to perform different actions based on different conditions.</p>
-          <ul>
-            <li>If</li>
-            <li>else</li>
-            <li>else if</li>
-          </ul>
-        </section>
-
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>If</p>
-          <pre><code class = "js">
-if (condition) {
-    block of code to be executed if the condition is true
-}
-          </code></pre>
-        </section>
-
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>If</p>
-          <pre><code class = "js">
-var target_temp = 72;
-var room_temp = 80;
-
-if (room_temp < target_temp){
-  // turn on heat
-}
-
-          </code></pre>
-
-        </section>
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>If</p>
-          <pre><code class = "js">
-if (condition) {
-    block of code to be executed if the condition is true
-} else { 
-    block of code to be executed if the condition is false
-}
-          </code></pre>
-        </section>
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>Else</p>
-          <pre><code class = "js">
-var target_temp = 72;
-var room_temp = 80;
-
-if (room_temp < target_temp){
-  // turn on heat
-} else {
-  // turn off heat
-}
-          </code></pre>
-        </section>
-
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>If</p>
-          <pre><code class = "js">
-if (condition1) {
-    block of code to be executed if condition1 is true
-} else if (condition2) {
-    block of code to be executed if the condition1 is false and condition2 is true
-} else {
-    block of code to be executed if the condition1 is false and condition2 is false
-}
-          </code></pre>
-        </section>
-        <!-- Conditionals-->
-        <section>
-          <h3>Conditionals</h3>
-          <p>Else if</p>
-          <pre><code class = "js">
-var target_temp = 72;
-var room_temp = 80;
-
-if (room_temp < target_temp){
-  // turn on heat
-} else if (room_temp > target_temp){
-  // turn off heat
-} else {
-  // do not change
-}
-          </code></pre>
-        </section>
-        <section>
-          <h3>Conditionals</h3>
-          <ul>
-            <li><a href="http://www.w3schools.com/js/js_operators.asp">http://www.w3schools.com/js/js_operators.asp</a></li>
-            <li> == </li>
-            <li> === </li>
-            <li> != </li>
-            <li>!== </li>
-            <li> > </li>
-            <li> < </li>
-            <li> >= </li>
-            <li> <= </li>
-          </ul>
-        </section>
-
-        <!-- Agenda-->
-        <section>
-          <h3>Loops</h3>
-        </section>
-
-
-      <!-- While Loops-->
-      <section>
-          <h3>While Loop</h3>
-          <pre><code class = "js">
-while (condition) {
-    code block to be executed
-}
-          </code></pre>
-        </section>
-
-        <!-- While-->
-        <section>
-          <h3>While Loop</h3>
-          <pre><code class = "js">
-while (i < 10) {
-    text += "The number is " + i;
-    i++;
-}
-          </code></pre>
-        </section>
-
-        <!-- For Loops-->
-        <section>
-          <section>
-            <h3>For Loop</h3>
-            <p>For</p>
-            <pre><code class = "js">
-  for (counter, limit; condition; counter_increment) {
-    code block to be executed
-  }
-
-            </code></pre>
-          </section>
-          <section>
-            <p>Example</p>
-            <pre><code class = "js">
-
-  for (var counter = 0, limit = 5; counter < limit; counter++) {
-      console.log("The number is " + counter);
-  }
-            </code></pre>
-          </section>
-          <section>
-            <p>Example</p>
-            <pre><code class = "js">
-  var animalArray = ["Cat", "Dog", "Fish"];
-
-  for (var counter = 0, limit = animalArray.length; counter < limit; counter++) {
-      console.log("The animal is " + animalArray[counter)];
-  }
-            </code></pre>
-          </section>
-          <section>
-            <p>Example</p>
-            <pre><code class = "js">
-  var animalArray = ["Cat", "Dog", "Fish"];
-
-  for (var i = 0, j = animalArray.length; i < j; i++) {
-      console.log("The animal is " + animalArray[i)];
-  }
-            </code></pre>
-          </section>
-        </section>
-
-
-        <!-- For Loops-->
-        <section>
-          <h3>Loops</h3>
-          <p>Practicing For Loops with a partner</p>
-          <ul>
-            <li>Alert numbers 1 - 10</li>
-            <li>Alert numbers 10 - 0</li>
-            <li>Alert odd numbers 1 - 10 </li>
-          </ul>
-        </section>
-
-
         <!-- Functions-->
         <section>
           <h3>Functions</h3>
-          <p>What is a function?</p>
-          <p>Why would we use it?</p>
+          <p>We can write our own functions?</p>
+          <p>Why would we want to?</p>
         </section>
 
         <section>
