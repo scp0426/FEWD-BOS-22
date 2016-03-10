@@ -12,5 +12,6 @@
 * Homework
 	* http://try.jquery.com/
 	* CityPix Application (jQuery) 
+	* Javacript Function Challenges (bonus) 
             
 
