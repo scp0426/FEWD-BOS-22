@@ -14,11 +14,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="../../reveal/css/reveal.css">
-		<link rel="stylesheet" href="../../reveal/css/theme/black.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="../../reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -42,102 +40,21 @@
 			<div class="slides">
 
 				<section>
-					<h1>LESSON 9</h1>
-					<h3>Advanced JS</h3>
+					<h1>LESSON 10</h1>
+					<h3>Javascript Loops and jQuery</h3>
 				</section>
 
         <section>
           <h3>Learning Objectives</h3>
-          <p>Define variables and identify best cases to use them.</p>
-          <p>Differentiate between strings, integers and floats.</p>
-          <p>Apply conditionals to change the programs control flow.</p>
-        </section>
-
-				<section>
-					<h3>Schedule</h3>
-					<ul>
-            <li>jQuery Review (15 min)</li>
-            <li>Variables (40 min) </li>
-            <li>Conditionals (50 min) </li>
-            <li>Weather Application (60 min) </li>
-					</ul>
-				</section>
-
-        <section data-background="#ccc">
-            <h1 style="color: #000;">You Do: jQuery Dom Selector Review</h1>
-            <p>Complete all questions in the exercise.js file. We've added the script tags for you.</p>
-            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/jquery_dom_selector_practice</p>
-        </section>
-
-				<section>
-					<h3>Variables</h3>
-          <p>What are variables?</p>
-				</section>
-
-        <section>
-          <h3>Variables</h3>
-          <ul>
-            <li>We can tell our program to remember values for us to use later on.</li>
-            <li>The action of saving a value to memory is called assignment</li>
-            <li>The entity we use to store the value is called a variable</li>
-            <li>The action of getting the value from a variable is called accessing the variable</li>
-          </ul>
+          <p>Review conditions and functions</p>
+          <p>Introduce loops</p>
+          <p>Introduce jQuery</p>
         </section>
 
         <section>
-          <h3>Variables Declation</h3>
-          <p>Declaration</p>
-          <pre><code class = "js">
-var age;
-          </code></pre>
-
-          <p>Assignment</p>
-          <pre><code class = "js">
-age = 21;
-          </code></pre>
-
-           <p>Both</p>
-          <pre><code class = "js">
-var age = 21;
-          </code></pre>
+          <h3>Review conditions and functions, Stop Light!</h3>
         </section>
 
-        <section>
-          <h3>Variables Re-assignment</h3>
-          <pre><code class = "js">
-var name = "Laura";
-          </code></pre>
-
-          <pre><code class = "js">
-name = "Mike";
-          </code></pre>
-
-           <p>Note: Now the variable "name" equals "Mike".</p>
-        </section>
-
-        <section>
-          <h3>Variable Conventions</h3>
-          <p>Variables start with a lower case letter.</p>
-          <p>If they contain multiple words, subsequent words start with an upper case letter.</p>
-          <pre><code class = "js">
-var numberOfStudents = 10;
-          </code></pre>
-        </section>
-
-
-        <section>
-          <h3>Variables &amp; Data Types</h3>
-          <p>What can you store in variables?</p>
-        </section>
-
-        <section>
-          <h3>Supported Data Types</h3>
-          <ul>
-            <li><strong>String</strong> = text</li>
-            <li><strong>Int / Float</strong> = number</li>
-            <li><strong>Boolean</strong> = true/false</li>
-          </ul>
-        </section>
    <!-- Agenda-->
         <section>
           <h3>Loops</h3>
@@ -187,6 +104,14 @@ while (i < 10) {
             </code></pre>
           </section>
           <section>
+            <h3>Build some loops</h3>
+              <ul>
+                <li>Console.logs 0-10</li>
+                <li>Console.logs 10-0</li>
+                <li>Console.logs even numbers 0-10</li>
+              </ul>  
+          </section>
+          <section>
             <p>Example</p>
             <pre><code class = "js">
   var animalArray = ["Cat", "Dog", "Fish"];
@@ -214,37 +139,162 @@ while (i < 10) {
           <h3>Loops</h3>
           <p>Practicing For Loops with a partner</p>
           <ul>
-            <li>Alert numbers 1 - 10</li>
-            <li>Alert numbers 10 - 0</li>
-            <li>Alert odd numbers 1 - 10 </li>
+            <li>Alert numbers 5 - 250 multiples of 5</li>
+            <li>Alert odd numbers 1 - 100 </li>
           </ul>
         </section>
+        <section>
+          <h3>Challenge</h3>
+          <ul>
+            <li>RPS Play to five</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Challenge</h3>
+          <ul>
+            <li>RPS Play to User choice</li>
+          </ul>
+        </section>
+        <section>
+          <h3>What is jQuery?</h3>
+          <p>jquery.com - A JavaScript library that makes DOM manipulation simple.</p>
+          <p>Created by John Resig in 2005, released in January of 2006.</p>
+          <p>Built in an attempt to simplify the existing DOM APIs and abstract away cross-browser issues.</p>
+        </section>
+
+        <section>
+          <h3>jQuery Examples</h3>
+          <p><a href="http://www.usatoday.com/news/">http://www.usatoday.com/news/</a></p>
+          <p><a href="http://foodsense.is/">http://foodsense.is/</a></p>
+        </section>
+
+        <section>
+          <h3>Why use jQuery?</h3>
+          <p>It's small, it's only approx. 23kb</p>
+          <p>Ton of <a href="https://plugins.jquery.com/">plugins</a></p>
+          <p>Everything works in IE 6+, Firefox 2+, Safari 3+, Chrome, and Opera 9+</p>
+          <p>Fully documented</p>
+          <p>Great community</p>
+        </section>
+
+        <section>
+          <h3>How many sites actually use jQuery?</h3>
+          <p><a href="http://builtwith.com/">http://builtwith.com/</a></p>
+        </section>
+
+        <section>
+          <h3>jQuery is simple (and easy!)</h3>
+                      <pre><code class = "js">
+$('div').addClass('special');
+          </code></pre>
+          <p>Find some element on the page (DOM tree)</p>
+          <p>Do something with it.</p>
+        </section>
+
+        <section>
+          <h3>Let's break this down...</h3>
+          <pre><code class = "js">
+$('div').addClass('special');
+          </code></pre>
+          <p>$ is the jQuery Object (also named jQuery)</p>
+          <p>"div" finds some elements using CSS selectors</p>
+          <p>$('div') returns a jQuery set (containing 0 to many DOM nodes).</p>
+          <p>in javascript we had to do document.getElementsByTagName('div')</p>
+          <p>addClass(...) modifies all the divs</p>
+        </section>
+
+        <section>
+          <h3>Wait, what if that selector doesn't exist?</h3>
+          <pre><code class = "js">
+$('.random-div').addClass('special');
+          </code></pre>
+          <p>Just like CSS, if jQuery can't find that element, nothing happens</p>
+        </section>
+
+        <section>
+          <h3>Common jQuery Functions</h3>
+            <p>.click()</p>
+            <p>.slideToggle()</p>
+            <p>.hide()</p>
+            <p>.show()</p>
+            <p>.slideUp()</p>
+            <p>.slideDown()</p>
+            <p>.children()</p>
+            <p>.attr()</p>
+        </section>
+
+        <section>
+          <h3>You sold me, how do I use it?</h3>
+          <p>You have two options:</p>
+          <ol>
+            <li><a href="https://jquery.com/download/">Download the library</a> and load it within your HTML page: </li>
+            <li><a href="https://code.jquery.com/">Reference a hosted verison</a> of the library in your HTML page</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Let's go back to thinking about our DOM tree again</h3>
+          <p>jQuery finds elements in the DOM tree on the page to manipulate, so the "tree" needs to be there before it can do it's magic right?</p>
+        </section>
+
+        <section>
+          <h3>jQuery "ready" function</h3>
+          <pre><code class = "js">
+$(document).ready(function(){ 
+    // Your jQuery code goes in here 
+});
+          </code></pre>
+          <p>jQuery has a ready event that fires the instant the DOM is ready to be worked with.</p>
+          <p>Stick all your jQuery code inside the "ready" block so that it fires when it should</p>
+        </section>
+
+        <section>
+          <h3>Now that it's on the page, use jQuery by using the $ sign.</h3>
+          <pre><code class = "js">
+$ 
+          </code></pre>
+        </section>
+
+
+        <!-- Notes: Use the starter, walk the students through how to modify the raw JavaScript to using jQuery.
+            1. Add the reference to jQuery
+            2. Add the document.ready
+            3. Show how on click you can run a function
+            4. Then update show how on click you can also chain events to also update the CSS
+            5. Discuss the differences between adding an attr vs. adding a class -->
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">Color Switcher</h1>
+            <h3>Watch how to update the JavaScript color switcher to use jQuery</h3>
+        </section>
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">Traffic Light</h1>
+            <h3>Together, let's make the traffic light work using jQuery</h3>
+        </section>
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">Accordion</h1>
+            <h3>With a partner, make a simple FAQ section that slides open &amp; closed.</h3>
+        </section>
+
         <!-- Starter code is included to save you time. It is helpful to demo the final product before coding. For beginners, it helps to know the end product before coding. Give students time to look through the HTML code. You can make changes to work with other data types. 
         -->
         
         <section data-background="#ccc">
-            <h1 style="color: #000;">We Do: Score Keeper Exercise</h1>
+            <h1 style="color: #000;">Score Keeper</h1>
             <p>Add functionality to update "result" based on which button is clicked.</p>
-            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/score_keeper</p>
         </section>
 
         <!-- solution: https://github.com/generalassembly-studio/FEWD_Curriculum/blob/master/Week_05_JS_ComputerScience/09_variables_conditionals/solutions/score_keeper/js/index.js -->
 
         <section data-background="#ccc">
-            <h1 style="color: #000;">We Do: Compare That Exercise</h1>
+            <h1 style="color: #000;">Compare That</h1>
             <p>Based on the numbers added to the inputs, add which comparison operator should be in the middle.</p>
-            <p>File located at: FEWDBOS18/Week_05_jQuery/09_Advanced_JS/starter_code/compare_that</p>
         </section>
 
         <!-- solution: https://github.com/generalassembly-studio/FEWD_Curriculum/tree/master/Week_05_JS_ComputerScience/09_variables_conditionals/solutions/compare_that -->
 
-        <section> 
-          <h1>Homework</h1>
-          <ul>
-            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/citypix">CityPix Application</a></li>
-            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/relaxr">Relaxr Blog(jQuery Practice)</a></li>
-            <li><a href="https://github.com/ga-students/FEWDBOS18/tree/master/Week_05_JQuery/09_Advanced_JS/homework/project-wireframes">Final Project Wireframes</a></li>
-        </section>
 
 
 
@@ -252,33 +302,36 @@ while (i < 10) {
 
 		</div>
 
-		<script src="../../reveal/lib/js/head.min.js"></script>
-		<script src="../../reveal/js/reveal.js"></script>
 
-		<script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js" type="text/javascript"></script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    <script>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../../reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '../../reveal/plugin/zoom-js/zoom.js', async: true },
-					{ src: '../../reveal/plugin/notes/notes.js', async: true }
-				]
-			});
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-		</script>
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
 
 	</body>
 </html>

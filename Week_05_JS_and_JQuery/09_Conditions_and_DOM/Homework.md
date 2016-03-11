@@ -11,5 +11,4 @@
 
 * Homework
   * Complete any outstanding homework
-  * FOO BAR challenge
   * Fix the broken stop light
