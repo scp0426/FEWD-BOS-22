@@ -10,7 +10,7 @@ $('#whiteButton').click(function(){
 
 function switchGray() {
   // document.body.style.backgroundColor = 'gray';
-	$("body.main").css("background-color", "gray");
+	$("body").css("background-color", "gray");
 
   // document.body.style.color = 'white';
   $("body").css("color", "white");

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GA Week 6 - jQuery</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+        <section>
+          <h1>FINAL PROJECTS</h1>
+          <h3>yahhhhhh! They rule!</h3>
+        </section>
+
+				<!-- Opening-->
+				<section>
+					<h1>LESSON 11</h1>
+					<h3>Interactive Web Pages with jQuery and Javascript </h3>
+				</section>
+
+
+				<!-- Agenda-->
+				<section>
+					<h1>Agenda</h1>
+					<ul>
+						<li>Review programming concepts</li>
+            <li>POP.ular(quiz)</li>
+						<li>Build websites together</li>
+					</ul>
+				</section>
+
+        <!-- Review -->
+        <section>
+          <h3>Javascript Review</h3>          
+          <div style="float:left; width:20%;">
+            <p>Comments</p>
+            <p>Variables</p>
+            <p>Functions</p>
+          </div>
+          <div style="float:left; width:20%;">
+            <p>Numbers</p>
+            <p>Strings</p> 
+          </div>
+          <div style="float:left; width:20%;">     
+            <p>Operators</p>
+            <p>Booleans</p>
+            <p><strong style="color:red;">Conditions</strong></p>
+          </div>
+          <div style="float:left; width:20%;">
+            <p>Arrays</p>
+            <p>Objects</p>
+          </div>
+          <div style="float:left; width:20%;">  
+            <p>*null</p>
+            <p>*undefined</p>
+          </div>
+        </section>
+
+        <section style="font-size: 24px">
+          <section>
+            <h1>Question 1</h1> 
+            <ul>
+              <h4><li>(a)</li>
+              <li>Create a function called dogYears</li>
+              <li>that takes a number as its argument</li>
+              <li>and returns the number multiplied by 7</li></h4>
+              <h4><li>(b)</li>
+              <li>Call that function with a paramter of 13</li></h4>
+            </ul>  
+          </section>
+          <section>
+            <h1>Question 2</h1>
+            <ul>
+              <h4><li>(a)</li>
+              <li>Create a function called zooKeeper</li>
+              <li>that takes 2 arrays of animal names as its arguments</li>
+              <li>and then combines the 2 arrays, sorts them alphebatically, reverses the order </li>
+              <li>and returns the new array of all the animals in reverse alphabetical order. </li></h4>
+              <h4><li>(b)</li>
+              <li>Call that function with 1 array of "Penguin", "Cat", "Squid" and the other array with "Moth", "Flamingo", "Ant".</li></h4>
+            </ul> 
+          </section>
+          <section>
+            <h1>Question 3</h1>
+            <ul>
+              <h4><li>(a)</li>
+              <li>Turn all the paragraphs on a page to font-size 50px in jQuery</li>
+            </ul> 
+          </section>
+
+        </section>
+
+        <!-- Functions-->
+        <section>
+        <section>
+          <h3>Functions Syntax</h3>
+          <img src="images/functions_syntax.png">
+          </section>
+          <section>
+          <h3>Function definiton vs call</h3>
+          <img src="images/function_calls.png">
+          </section>
+        </section>
+
+        <!-- Functions-->
+        <section>
+        <section>
+          <h3>jQuery</h3>
+          <img src="images/argument_syntax.png">
+          </section>
+          <section>
+          <pre><code class = "js">
+$("");
+
+$("p");
+
+$("#main-column ul li:last-child");
+
+$("p").css("background-color", "red");
+
+$("p").addClass("red-background");
+
+          </code></pre>
+          </section>
+        </section>
+
+        <!-- Data Types-->
+        <section>
+          <div style="width: 25%;float: left">
+            <p>Javascript Common Methods</p>
+            <ul>
+              <li>console.log();</li>
+              <li>alert();</li>
+              <li>prompt();</li>
+              <li>confirm();</li>
+            </ul>
+          </div>
+          <div style="width: 25%;float: left">
+            <p>String Methods</p>
+            <p><a href="http://www.w3schools.com/js/js_string_methods.asp">w3schools</a></p>
+            <ul>
+              <li>.concat()</li>
+              <li>.length</li>
+              <li>.indexOf()</li>
+              <li>.slice()</li>
+              <li>.replace()</li>  
+            </ul>
+          </div>
+          <div style="width: 25%;float: left">
+            <p>Array Methods</p>
+            <p><a href="http://www.w3schools.com/js/js_array_methods.asp">w3schools</a></p>
+            <ul>
+              <li>.concat()</li>
+              <li>.length</li>
+              <li>.push()</li>
+              <li>.pop()</li>
+              <li>.indexOf()</li>
+              <li>.join()</li>
+              <li>.reverse()</li>
+            </ul>
+          </div>
+          <div style="width: 25%;float: left">
+            <p>jQuery Methods</p>
+            <p><a href="http://api.jquery.com/">jQuery Docs</a></p>
+            <ul>
+              <li>.addClass())</li>
+              <li>.removeClass()</li>
+              <li>.css()</li>
+              <li>.css( parameter, parameter)</li>
+              <li>.each()</li>
+              <li>.hide()</li>
+              <li>.show()</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Let's watch how to make the Color Scheme Changer</h3>
+        </section>
+
+        <section>
+          <h3>Let's make the Compare That website together</h3>
+        </section>
+
+        <section>
+          <h3>Let's make the CitiPix website together</h3>
+        </section>
+
+        <section>
+          <h3>Let's make the Score Keeper website in groups</h3>
+        </section>
+
+        <section>
+          <h3>Let's do the Cash Register website together</h3>
+        </section>
+
+			</div>
+
+		</div>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js" type="text/javascript"></script>
+
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+	</body>
+</html>
