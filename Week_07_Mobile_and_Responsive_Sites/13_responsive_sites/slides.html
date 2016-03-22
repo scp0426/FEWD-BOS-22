@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GA Week 7 - Class 13</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal/css/print/pdf.css' : '../../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>LESSON 13</h1>
+					<h3>Responsive Basics</h3>
+				</section>
+
+        <section>
+          <h1>Schedule</h1>
+          <ul>
+            <li>Responsive Design Discussion</li>
+            <li>Lab: Boxes Challenge</li>
+          </ul>
+        </section>
+
+				<section>
+					<h3>What is Responsive Design?</h3>
+          <p><em>If you think responsive's simple, I feel bad for you son. We got 99 viewports, but the iPhone's just one.</em> —Josh Brewer, March 10, 2010</p>
+				</section>
+
+        <section>
+          <p>Responsive web design (RWD) is an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from desktop computer monitors to mobile phones).</p>
+        </section>
+
+        <section>
+          <h3>Examples</h3>
+          <p><a href="http://www.awwwards.com/50-examples-of-responsive-web-design.html">http://www.awwwards.com/50-examples-of-responsive-web-design.html</a></p>
+        </section>
+
+        <!-- Notes:
+          * Use smashing magazine site as an example
+          * Discuss how containers are fluid
+          * On iPads, left hand nav moves to top
+          * Social media icons move to right side
+          * On mobile, only content is displayed
+          * On mobile, headings and text sizes are larger
+          * On mobile, images shrink to fit the width of the column
+        -->
+  
+        <section>
+          <h3>What does that really mean?</h3>
+          <ul>
+            <li>Fluid images</li>
+            <li>Fluid layouts</li>
+            <li>Media queries(breakpoints)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Fluid images</h3>
+          <p>Giving an image a percentage width so it scales to fit it's container</p>
+          <p>Code pen: <a href="http://codepen.io/lauravecchio/pen/lkdnG?editors=110">http://codepen.io/lauravecchio/pen/lkdnG?editors=110</a></p>
+        </section>
+
+
+        <section>
+          <h3>Fluid layouts</h3>
+          <p>Giving a div (or HTML5 element) a percentage width so it scales</p>
+          <p>Code pen: <a href="http://codepen.io/lauravecchio/pen/bVrwgr?editors=110">http://codepen.io/lauravecchio/pen/bVrwgr?editors=110</a></p>
+        </section>
+
+
+        <section>
+          <h3>Media Queries</h3>
+          <p>Media query is a CSS technique introduced in CSS3</p>
+          <p>It uses the @media rule to include a block of CSS properties only if a certain condition is true.</p>
+        </section>
+
+        <section>
+          <h3><a href="http://codepen.io/lauravecchio/pen/JYyRWg?editors=110">Example</a></h3>
+          <p>If the browser window is smaller than 500px, the background color will change to lightblue:</p>
+          <pre><code>
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Breakpoints</h3>
+          <p>We've discussed how to make fluid columns and images, but in most cases that isn't enough to make your site look good on a small screen</p>
+          <p>Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently</p>
+          <p><a href="http://codepen.io/lauravecchio/pen/yYoabq?editors=110">http://codepen.io/lauravecchio/pen/yYoabq?editors=110</a></p>
+        </section>
+
+        <section>
+          <h3>Mobile First</h3>
+          <p>Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).</p>
+          <p>Instead of adding a breakpoint when screen gets smaller, add it when it gets larger</p>
+        </section>
+
+        <section>
+          <h3>Orientation: Portrait / Landscape</h3>
+          <p>Media queries can also be used to change layout of a page depending on the orientation of the browser.</p>
+          <p>You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation:</p>
+          <pre><code>
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
+          </code></pre>    
+        </section>  
+
+        <section data-background="#ccc">
+            <h1 style="color: #000;">Practice: Responsive Navigation</h1>
+        </section>
+
+        <!-- Put students in teams of 4, count off by 4 then have them use the wall to plan their approach before beginning to code -->
+        <section data-background="#ccc">
+            <h1 style="color: #000;">LAB: Boxes Challenge</h1>
+       
+        </section>
+
+			</div>
+
+		</div>
+
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js" type="text/javascript"></script>
+
+
+
+		<script>
+
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+        ]
+      });
+		</script>
+
+	</body>
+</html>
