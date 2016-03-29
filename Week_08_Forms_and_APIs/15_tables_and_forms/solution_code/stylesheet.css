@@ -107,6 +107,11 @@ input[type="text"] {
   margin: 2px 0 0;
 }
 
+/* FORM NAME FIELDS STYLING */
+.name-fields input {
+  width: 154px;
+}
+
 /* FORM PHONE INPUT STYLES */
 input[type="text"].phone {
   width: 50px;
@@ -114,20 +119,17 @@ input[type="text"].phone {
 
 
 /* FORM ADDRESS FIELDS STYLING */
-.address-fields .address-city {
+.address-city {
   width: 130px;
 }
-.address-fields .address-state,
-.address-fields .address-postal-code {
+.address-state,
+.address-postal-code {
   width: 80px;
 }
-.address-fields .address-street-address,
-.address-fields .address-line-2 {
+.address-street-address,
+.address-line-2 {
   display: block;
 }
 
-/* FORM NAME FIELDS STYLING */
-.name-fields input {
-  width: 154px;
-}
+
 
