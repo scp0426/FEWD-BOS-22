@@ -94,7 +94,6 @@ select {
 textarea:focus,
 input[type="text"]:focus,
 select:focus {
-  background: white;
   border: 1px solid #99E2FF;
   outline: none;
   box-shadow: 0 0 6px #99E2FF;
