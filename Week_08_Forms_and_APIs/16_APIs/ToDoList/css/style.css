@@ -54,9 +54,7 @@ body {
 #todos a {
 	visibility: hidden;
 	cursor: pointer;
-	margin-left: 1em;
-	font-size: .5em;
-	text-transform: uppercase;
+col
 	color: navy;
 }
 #todos li:hover a {
